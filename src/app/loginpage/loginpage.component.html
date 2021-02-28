@@ -1,0 +1,19 @@
+<body>
+    <h1>Login Page</h1>
+    <form (ngsubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="username" class='labeltext'>Username</label>&nbsp;
+            <input type="text" formControlName="username" class='inputtxt' />
+        </div><br>
+        <div class="form-group">
+            <label for="password" class='labeltext'>Password</label>&nbsp;
+            <input type="password" formControlName="password" class='inputtxt' />
+        </div><br>
+        <div class="form-group">
+            <button class='btn'>
+                Login
+            </button>&nbsp;&nbsp;
+            <a routerLink="/register" class="btn btn-link">Register</a>
+        </div><br>
+    </form>
+</body>
